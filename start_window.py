@@ -1,4 +1,3 @@
-import os
 import sys
 from const_value import *
 from load_image import load_image
@@ -87,7 +86,6 @@ def start_window():
                 if quit_button.check_for_input(pos):
                     pygame.quit()
                     sys.exit()
-        pygame.display.update()
         pygame.display.flip()
     pygame.quit()
     sys.exit()
