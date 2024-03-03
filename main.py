@@ -1,6 +1,3 @@
-import pygame
-import sys
-import os
 import start_window
 
 
