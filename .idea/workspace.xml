@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32f21c97-3c47-49c8-a47e-ecb832dee507" name="Changes" comment="start_game_logic">
-      <change afterPath="$PROJECT_DIR$/meteorit.py" afterDir="false" />
+    <list default="true" id="32f21c97-3c47-49c8-a47e-ecb832dee507" name="Changes" comment="meteorit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const_value.py" beforeDir="false" afterPath="$PROJECT_DIR$/const_value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/img/spaceship.py" beforeDir="false" afterPath="$PROJECT_DIR$/spaceship.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/escape_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/escape_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_mat1/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/img/anim_met2/7.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/rules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteorit.py" beforeDir="false" afterPath="$PROJECT_DIR$/meteorit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,13 +198,22 @@
       <option name="project" value="LOCAL" />
       <updated>1709484047312</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="meteorit">
+      <option name="closed" value="true" />
+      <created>1709572950126</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709572950126</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="start_window" />
     <MESSAGE value="start_game_logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="start_game_logic" />
+    <MESSAGE value="meteorit" />
+    <option name="LAST_COMMIT_MESSAGE" value="meteorit" />
   </component>
 </project>
