@@ -8,13 +8,14 @@ from load_image import load_image
 # Страница правил
 def rules():
     running = True
+
     while running:
         pos = pygame.mouse.get_pos()
         screen.blit(load_image("img/fon.jpg"), (0, 0))
 
         rules_text = ["Правила", "",
                       "Их покачто нету",
-                      "Играем во что дано"]
+                      "Играем во что дано",]
         text_coord = 60
         for line in rules_text:
             str_render = get_font(74).render(line, 1, WHITE)

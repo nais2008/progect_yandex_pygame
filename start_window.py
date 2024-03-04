@@ -1,4 +1,5 @@
 from rules import *
+from game import start_play
 
 
 # Начало игры
@@ -9,6 +10,7 @@ def play():
 # стартовая страница
 def start_window():
     running = True
+
     while running:
         screen.blit(load_image("img/fon.jpg"), (0, 0))
 
@@ -38,7 +40,7 @@ def start_window():
                 running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if play_button.check_for_input(pos):
-                    play()
+                    start_play()
                 if rules_button.check_for_input(pos):
                     rules()
                 if quit_button.check_for_input(pos):

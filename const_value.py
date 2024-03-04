@@ -17,11 +17,11 @@ def get_font(font_size):
     return pygame.font.Font("data/font/font.otf", font_size)
 
 
-FPS = 120
+FPS = 20
 
 # colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GRAY = (105, 105, 105)
-EXIT_RED = (205, 100, 100)
-START_GREEN = (100, 155, 100)
+EXIT_RED = (255, 100, 100)
+START_GREEN = (100, 255, 100)
