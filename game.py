@@ -1,15 +1,18 @@
-import sys
 from spaceship import *
 from meteorit import *
+import sys
 
 
 def start_play():
     pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
     sp = Player("img/anim_sp/0.png", 20)
+
     meteorits = pygame.sprite.Group()
-    meteorits.add(Meteorit("img/anim_met1/0.png", 10))
-    meteorits.add(Meteorit("img/anim_met2/6.png", 12))
-    meteorits.add(Meteorit("img/anim_met2/0.png", 8))
+    meteorits.add(Meteorit("img/anim_met1/0.png"))
+    meteorits.add(Meteorit("img/anim_met1/0.png"))
+    meteorits.add(Meteorit("img/anim_met2/0.png"))
+    meteorits.add(Meteorit("img/anim_met2/0.png"))
+
     running = True
     while running:
         clock = pygame.time.Clock()
@@ -18,9 +21,14 @@ def start_play():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+        bullets.update()
+
         sp.update()
         sp.animation()
+
         meteorits.draw(screen)
+        meteorits.update()
+
         pygame.display.update()
         clock.tick(FPS)
     pygame.quit()

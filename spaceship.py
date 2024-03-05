@@ -1,6 +1,5 @@
-from load_image import load_image
-from const_value import *
 from escape_screen import escape_screen
+from bullet import *
 
 
 walk_left = [
@@ -13,6 +12,7 @@ walk_right = [
     load_image("img/anim_sp/1.png"),
     load_image("img/anim_sp/2.png")
 ]
+bullets = pygame.sprite.Group()
 
 
 # параметры карабля
@@ -29,6 +29,7 @@ class Spaceship(pygame.sprite.Sprite):
         self.right = False
         self.count = 0
         self.speed = speed
+        self.xp = 100
 
 
 # управление караблем
@@ -46,13 +47,16 @@ class Player(Spaceship):
             self.rect.x += self.speed
             self.left = False
             self.right = True
+        elif keys[pygame.K_SPACE]:
+            new_bullet = Bullet(self.rect.x)
+            bullets.add(new_bullet)
         else:
             self.left = False
             self.right = False
             self.count = 0
 
     def animation(self):
-        if self.count >= 120:
+        if self.count >= 20:
             self.count = 0
         if self.left == True:
             screen.blit(walk_left[(self.count // 10) % 3], (self.rect.x, self.rect.y))
