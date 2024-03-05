@@ -2,11 +2,6 @@ from rules import *
 from game import start_play
 
 
-# Начало игры
-def play():
-    pass
-
-
 # стартовая страница
 def start_window():
     running = True

@@ -1,4 +1,3 @@
-from escape_screen import escape_screen
 from bullet import *
 
 
@@ -30,16 +29,14 @@ class Spaceship(pygame.sprite.Sprite):
         self.count = 0
         self.speed = speed
         self.xp = 100
+        self.click = 0
 
 
 # управление караблем
 class Player(Spaceship):
     def update(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_ESCAPE]:
-            print("esc")
-            escape_screen()
-        elif keys[pygame.K_LEFT] and self.rect.x > 10:
+        if keys[pygame.K_LEFT] and self.rect.x > 10:
             self.rect.x -= self.speed
             self.left = True
             self.right = False
@@ -47,13 +44,21 @@ class Player(Spaceship):
             self.rect.x += self.speed
             self.left = False
             self.right = True
-        elif keys[pygame.K_SPACE]:
-            new_bullet = Bullet(self.rect.x)
-            bullets.add(new_bullet)
         else:
             self.left = False
             self.right = False
             self.count = 0
+        if keys[pygame.K_SPACE]:
+            self.click += 1
+        if self.click >= 2:
+            new_bullet = Bullet(self.rect.x)
+            bullets.add(new_bullet)
+
+            for bul in bullets:
+                if bul.rect.y <= 0:
+                    bullets.remove(bul)
+
+            self.click = 0
 
     def animation(self):
         if self.count >= 20:

@@ -1,3 +1,4 @@
+import escape_window
 from const_value import *
 import sys
 from button import Button
@@ -26,18 +27,26 @@ def rules():
             screen.blit(str_render, intro_rect)
             text_coord += 10
 
-        rules_back_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 680),
-                                   text_input="Назад", font=get_font(48),
-                                   base_color=GRAY, hover_color=EXIT_RED)
+        rules_start_button = Button(image=None, pos=(WINDOW_WIDTH // 3, 600),
+                                    text_input="На главную", font=get_font(48),
+                                    base_color=GRAY, hover_color=EXIT_RED)
+        rules_pause_button = Button(image=None, pos=(WINDOW_WIDTH // 1.5, 600),
+                                    text_input="Пауза", font=get_font(48),
+                                    base_color=GRAY, hover_color=EXIT_RED)
 
-        rules_back_button.change_color(pos)
-        rules_back_button.update(screen)
+        rules_start_button.change_color(pos)
+        rules_start_button.update(screen)
+
+        rules_pause_button.change_color(pos)
+        rules_pause_button.update(screen)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
-                if rules_back_button.check_for_input(pos):
+                if rules_start_button.check_for_input(pos):
                     start_window.start_window()
+                if rules_pause_button.check_for_input(pos):
+                    escape_window.escape_window()
         pygame.display.flip()

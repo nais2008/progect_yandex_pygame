@@ -3,9 +3,12 @@ from meteorit import *
 import sys
 
 
+# начало игры
 def start_play():
     pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
     sp = Player("img/anim_sp/0.png", 20)
+
+    global bullets
 
     meteorits = pygame.sprite.Group()
     meteorits.add(Meteorit("img/anim_met1/0.png"))
@@ -21,6 +24,7 @@ def start_play():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+        bullets.draw(screen)
         bullets.update()
 
         sp.update()
