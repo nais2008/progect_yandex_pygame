@@ -19,6 +19,24 @@ def get_font(font_size):
 
 FPS = 20
 
+met1 = [
+    "img/anim_met1/0.png",
+    "img/anim_met1/1.png",
+    "img/anim_met1/2.png",
+    "img/anim_met1/3.png",
+    "img/anim_met1/4.png",
+    "img/anim_met1/5.png"
+]
+met2 = [
+    "img/anim_met2/0.png",
+    "img/anim_met2/1.png",
+    "img/anim_met2/2.png",
+    "img/anim_met2/3.png",
+    "img/anim_met2/4.png",
+    "img/anim_met2/5.png",
+    "img/anim_met2/6.png"
+]
+
 # colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)

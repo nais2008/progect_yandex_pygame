@@ -28,8 +28,11 @@ class Spaceship(pygame.sprite.Sprite):
         self.right = False
         self.count = 0
         self.speed = speed
-        self.xp = 100
+        self.lives = 5
         self.click = 0
+
+    def decrease_lives(self):
+        self.lives -= 1
 
 
 # управление караблем
