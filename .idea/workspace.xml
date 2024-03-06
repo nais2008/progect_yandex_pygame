@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32f21c97-3c47-49c8-a47e-ecb832dee507" name="Changes" comment="столкновения и escape_menu">
-      <change afterPath="$PROJECT_DIR$/check_collision.py" afterDir="false" />
+    <list default="true" id="32f21c97-3c47-49c8-a47e-ecb832dee507" name="Changes" comment="end_window и escape_menu">
+      <change afterPath="$PROJECT_DIR$/end_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_collision.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_collision.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/const_value.py" beforeDir="false" afterPath="$PROJECT_DIR$/const_value.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meteorit.py" beforeDir="false" afterPath="$PROJECT_DIR$/meteorit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spaceship.py" beforeDir="false" afterPath="$PROJECT_DIR$/spaceship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709674361822</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="end_window и escape_menu">
+      <option name="closed" value="true" />
+      <created>1709682933161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709682933161</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +235,7 @@
     <MESSAGE value="meteorit" />
     <MESSAGE value="bullet" />
     <MESSAGE value="столкновения и escape_menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="столкновения и escape_menu" />
+    <MESSAGE value="end_window и escape_menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="end_window и escape_menu" />
   </component>
 </project>

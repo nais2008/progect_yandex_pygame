@@ -1,17 +1,16 @@
-from rules import *
-from game import start_play
 import const_value
+from rules import *
+import game
 
 
-# стартовая страница
-def start_window():
+def end_window():
     running = True
 
     while running:
-        screen.blit(load_image("img/fon.jpg"), (0, 0))
+        const_value.screen.blit(load_image("img/fon.jpg"), (0, 0))
 
         pos = pygame.mouse.get_pos()
-        menu_text = get_font(100).render("Меню", True, WHITE)
+        menu_text = get_font(100).render(f"Конец. Счет: {str(const_value.COUNT)}", True, WHITE)
         menu_rect = menu_text.get_rect(center=(WINDOW_WIDTH // 2, 60))
         play_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 250),
                              text_input="Играть", font=get_font(75),
@@ -36,7 +35,7 @@ def start_window():
                 running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if play_button.check_for_input(pos):
-                    start_play()
+                    game.start_play()
                     const_value.COUNT = 0
                 if rules_button.check_for_input(pos):
                     rules()

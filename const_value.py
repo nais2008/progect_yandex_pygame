@@ -3,6 +3,8 @@ import pygame
 # data pygame
 pygame.font.init()
 
+COUNT = 0
+
 SIZE = WINDOW_WIDTH, WINDOW_HEIGHT = 1280, 720
 CAPTION = "game которая заслуживает 100 баллов"
 ICON = pygame.image.load("data/img/logo.jpg")
