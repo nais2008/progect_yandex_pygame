@@ -13,15 +13,18 @@ def start_window():
         pos = pygame.mouse.get_pos()
         menu_text = get_font(100).render("Меню", True, WHITE)
         menu_rect = menu_text.get_rect(center=(WINDOW_WIDTH // 2, 60))
-        play_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 250),
+        play_button = Button(image=None,
+                             pos=(WINDOW_WIDTH // 2, 250),
                              text_input="Играть", font=get_font(75),
                              base_color=GRAY,
                              hover_color=START_GREEN)
-        rules_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 350),
+        rules_button = Button(image=None,
+                              pos=(WINDOW_WIDTH // 2, 350),
                               text_input="Правила", font=get_font(75),
                               base_color=GRAY,
                               hover_color=WHITE)
-        quit_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 680),
+        quit_button = Button(image=None,
+                             pos=(WINDOW_WIDTH // 2, 680),
                              text_input="Выйти", font=get_font(48),
                              base_color=GRAY,
                              hover_color=EXIT_RED)

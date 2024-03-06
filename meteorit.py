@@ -14,9 +14,8 @@ class Meteorit(pygame.sprite.Sprite):
         self.rect.x = random.randrange(0, WINDOW_WIDTH - self.rect.width)
         self.rect.y = 0
 
-        self.animation_images = [load_image(image) for image in animation_images]
-        self.animation_index = 0
-        self.exploding = False
+        self.anim = animation_images
+        self.count = 0
 
     def update(self):
         if self.rect.y < WINDOW_HEIGHT - 20:
@@ -26,6 +25,7 @@ class Meteorit(pygame.sprite.Sprite):
             self.rect.x = random.randrange(0, WINDOW_WIDTH - self.rect.width)
             self.speed = random.randrange(3, 12)
 
-    def check_collision_with_spaceship(self, spaceship):
-        if pygame.sprite.collide_rect(self, spaceship):
-            spaceship.decrease_lives()
+    def animation(self):
+        screen.blit(self.anim[(self.count // 2) % 3],
+                    (self.rect.x, self.rect.y))
+        self.count += 1

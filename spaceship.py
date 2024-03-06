@@ -56,6 +56,8 @@ class Player(Spaceship):
         if self.click >= 2:
             new_bullet = Bullet(self.rect.x)
             bullets.add(new_bullet)
+            pygame.mixer.music.load('data/mus/bullit.mp3')
+            pygame.mixer.music.play()
 
             for bul in bullets:
                 if bul.rect.y <= 0:

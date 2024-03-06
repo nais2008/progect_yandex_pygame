@@ -27,12 +27,16 @@ def rules():
             screen.blit(str_render, intro_rect)
             text_coord += 10
 
-        rules_start_button = Button(image=None, pos=(WINDOW_WIDTH // 3, 600),
+        rules_start_button = Button(image=None,
+                                    pos=(WINDOW_WIDTH // 3, 600),
                                     text_input="На главную", font=get_font(48),
-                                    base_color=GRAY, hover_color=EXIT_RED)
-        rules_pause_button = Button(image=None, pos=(WINDOW_WIDTH // 1.5, 600),
+                                    base_color=GRAY,
+                                    hover_color=EXIT_RED)
+        rules_pause_button = Button(image=None,
+                                    pos=(WINDOW_WIDTH // 1.5, 600),
                                     text_input="Пауза", font=get_font(48),
-                                    base_color=GRAY, hover_color=EXIT_RED)
+                                    base_color=GRAY,
+                                    hover_color=EXIT_RED)
 
         rules_start_button.change_color(pos)
         rules_start_button.update(screen)

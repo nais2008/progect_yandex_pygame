@@ -2,6 +2,7 @@ import rules
 from const_value import *
 from load_image import *
 from button import Button
+import game
 
 
 def escape_window():
@@ -13,11 +14,13 @@ def escape_window():
         pos = pygame.mouse.get_pos()
         menu_text = get_font(100).render("Пауза", True, WHITE)
         menu_rect = menu_text.get_rect(center=(WINDOW_WIDTH // 2, 60))
-        play_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 350),
+        play_button = Button(image=None,
+                             pos=(WINDOW_WIDTH // 2, 350),
                              text_input="Продолжить", font=get_font(75),
                              base_color=GRAY,
                              hover_color=START_GREEN)
-        rules_button = Button(image=None, pos=(WINDOW_WIDTH // 2, 450),
+        rules_button = Button(image=None,
+                              pos=(WINDOW_WIDTH // 2, 450),
                               text_input="Правила", font=get_font(75),
                               base_color=GRAY,
                               hover_color=WHITE)
@@ -31,8 +34,8 @@ def escape_window():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
-                # if play_button.check_for_input(pos):
-                    # start_play()
+                if play_button.check_for_input(pos):
+                    game.start_play()
                 if rules_button.check_for_input(pos):
                     rules.rules()
         pygame.display.flip()
